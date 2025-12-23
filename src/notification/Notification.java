@@ -1,2 +1,5 @@
-package notification;public interface Notication {
+package notification;
+
+public interface Notification {
+     void notifyUser();
 }

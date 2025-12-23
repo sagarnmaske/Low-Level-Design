@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="few changes in payment service">
-      <change afterPath="$PROJECT_DIR$/src/printerService/AdvancePrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/printerService/AllInOnePrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/printerService/BasicPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/printerService/Faxable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/printerService/Office.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/printerService/Printable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/printerService/PrinterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/printerService/Scannable.java" afterDir="false" />
+    <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="Printer Service Low level Design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notification/EmailNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notification/EmailNotification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notification/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notification/NotificationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notification/NotificationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notification/SmsNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notification/SmsNotification.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +37,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager">
@@ -81,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1766166324173</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Printer Service Low level Design">
+      <created>1766427505879</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1766427505879</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +102,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="payment strategy lld" />
     <MESSAGE value="few changes in payment service" />
-    <option name="LAST_COMMIT_MESSAGE" value="few changes in payment service" />
+    <MESSAGE value="Printer Service Low level Design" />
+    <option name="LAST_COMMIT_MESSAGE" value="Printer Service Low level Design" />
   </component>
 </project>
