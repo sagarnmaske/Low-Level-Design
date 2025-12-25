@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="Printer Service Low level Design">
+    <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="notification system">
+      <change afterPath="$PROJECT_DIR$/src/shoppingcartSystem/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shoppingcartSystem/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shoppingcartSystem/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shoppingcartSystem/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shoppingcartSystem/UserCartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notification/EmailNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notification/EmailNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notification/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notification/NotificationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notification/NotificationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notification/SmsNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notification/SmsNotification.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,11 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="shoppingcartSystem" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -85,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1766427505879</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="notification system">
+      <created>1766510757464</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1766510757464</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +116,7 @@
     <MESSAGE value="payment strategy lld" />
     <MESSAGE value="few changes in payment service" />
     <MESSAGE value="Printer Service Low level Design" />
-    <option name="LAST_COMMIT_MESSAGE" value="Printer Service Low level Design" />
+    <MESSAGE value="notification system" />
+    <option name="LAST_COMMIT_MESSAGE" value="notification system" />
   </component>
 </project>

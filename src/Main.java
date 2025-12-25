@@ -6,6 +6,7 @@ import printerService.AdvancePrinter;
 import printerService.AllInOnePrinter;
 import printerService.BasicPrinter;
 import printerService.Office;
+import shoppingcartSystem.UserCartController;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +15,9 @@ public class Main {
 //        paymentStrategy.pay();
 //        Office office = new Office(new BasicPrinter());
 //        office.doWork();
-        NotificationManager notificationManager = new NotificationManager(new SmsNotification());
-        notificationManager.tellSecret();
+//        NotificationManager notificationManager = new NotificationManager(new SmsNotification());
+ //       notificationManager.tellSecret();
+        UserCartController userCartController = new UserCartController();
+        userCartController.createCartSystem();
     }
 }
