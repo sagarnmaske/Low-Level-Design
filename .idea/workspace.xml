@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="notification system">
-      <change afterPath="$PROJECT_DIR$/src/shoppingcartSystem/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shoppingcartSystem/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shoppingcartSystem/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shoppingcartSystem/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shoppingcartSystem/UserCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/equalandHashcode/Money.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/equalandHashcode/MoneyDriverController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>

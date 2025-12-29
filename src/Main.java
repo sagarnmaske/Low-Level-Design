@@ -1,4 +1,5 @@
 
+import equalandHashcode.MoneyDriverController;
 import notification.EmailNotification;
 import notification.NotificationManager;
 import notification.SmsNotification;
@@ -17,7 +18,9 @@ public class Main {
 //        office.doWork();
 //        NotificationManager notificationManager = new NotificationManager(new SmsNotification());
  //       notificationManager.tellSecret();
-        UserCartController userCartController = new UserCartController();
-        userCartController.createCartSystem();
+//        UserCartController userCartController = new UserCartController();
+//        userCartController.createCartSystem();
+        MoneyDriverController moneyDriverController = new MoneyDriverController();
+        moneyDriverController.createImmutableClass();
     }
 }
