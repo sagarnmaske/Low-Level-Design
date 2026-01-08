@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="notification system" />
+    <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="notification system">
+      <change afterPath="$PROJECT_DIR$/src/factoryPattern/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factoryPattern/CarFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factoryPattern/CarFactoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factoryPattern/CarType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factoryPattern/EconomicalCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factoryPattern/LuxuryCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factoryPattern/SportsCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +25,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -118,11 +129,38 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

@@ -1,5 +1,6 @@
 
 import equalandHashcode.MoneyDriverController;
+import factoryPattern.CarFactoryController;
 import notification.EmailNotification;
 import notification.NotificationManager;
 import notification.SmsNotification;
@@ -26,7 +27,9 @@ public class Main {
 //        moneyDriverController.createImmutableClass();
  //       UserRegistrationController userRegistrationController = new UserRegistrationController();
  //       userRegistrationController.performOperations();
-        LoggerController loggerController = new LoggerController();
-        loggerController.checkInstances();
+  //      LoggerController loggerController = new LoggerController();
+  //      loggerController.checkInstances();
+        CarFactoryController carFactoryController = new CarFactoryController();
+        carFactoryController.testDrive();
     }
 }
