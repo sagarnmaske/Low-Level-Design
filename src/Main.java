@@ -8,6 +8,7 @@ import printerService.AllInOnePrinter;
 import printerService.BasicPrinter;
 import printerService.Office;
 import shoppingcartSystem.UserCartController;
+import singletonPattern.LoggerController;
 import userRegistrationSystem.UserRegistrationController;
 
 public class Main {
@@ -23,7 +24,9 @@ public class Main {
 //        userCartController.createCartSystem();
 //        MoneyDriverController moneyDriverController = new MoneyDriverController();
 //        moneyDriverController.createImmutableClass();
-        UserRegistrationController userRegistrationController = new UserRegistrationController();
-        userRegistrationController.performOperations();
+ //       UserRegistrationController userRegistrationController = new UserRegistrationController();
+ //       userRegistrationController.performOperations();
+        LoggerController loggerController = new LoggerController();
+        loggerController.checkInstances();
     }
 }
