@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="notification system">
-      <change afterPath="$PROJECT_DIR$/src/factoryPattern/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factoryPattern/CarFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factoryPattern/CarFactoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factoryPattern/CarType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factoryPattern/EconomicalCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factoryPattern/LuxuryCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factoryPattern/SportsCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/builderPattern/BuilderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/builderPattern/HttpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/builderPattern/HttpRequestBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -24,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>

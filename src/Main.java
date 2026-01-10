@@ -1,4 +1,5 @@
 
+import builderPattern.BuilderController;
 import equalandHashcode.MoneyDriverController;
 import factoryPattern.CarFactoryController;
 import notification.EmailNotification;
@@ -29,7 +30,9 @@ public class Main {
  //       userRegistrationController.performOperations();
   //      LoggerController loggerController = new LoggerController();
   //      loggerController.checkInstances();
-        CarFactoryController carFactoryController = new CarFactoryController();
-        carFactoryController.testDrive();
+//        CarFactoryController carFactoryController = new CarFactoryController();
+//        carFactoryController.testDrive();
+        BuilderController builderController = new BuilderController();
+        builderController.createRequest();
     }
 }
