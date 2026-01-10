@@ -11,6 +11,7 @@ import printerService.BasicPrinter;
 import printerService.Office;
 import shoppingcartSystem.UserCartController;
 import singletonPattern.LoggerController;
+import stateDesignPattern.RunTraffic;
 import userRegistrationSystem.UserRegistrationController;
 
 public class Main {
@@ -21,18 +22,20 @@ public class Main {
 //        Office office = new Office(new BasicPrinter());
 //        office.doWork();
 //        NotificationManager notificationManager = new NotificationManager(new SmsNotification());
- //       notificationManager.tellSecret();
+        //       notificationManager.tellSecret();
 //        UserCartController userCartController = new UserCartController();
 //        userCartController.createCartSystem();
 //        MoneyDriverController moneyDriverController = new MoneyDriverController();
 //        moneyDriverController.createImmutableClass();
- //       UserRegistrationController userRegistrationController = new UserRegistrationController();
- //       userRegistrationController.performOperations();
-  //      LoggerController loggerController = new LoggerController();
-  //      loggerController.checkInstances();
+        //       UserRegistrationController userRegistrationController = new UserRegistrationController();
+        //       userRegistrationController.performOperations();
+        //      LoggerController loggerController = new LoggerController();
+        //      loggerController.checkInstances();
 //        CarFactoryController carFactoryController = new CarFactoryController();
 //        carFactoryController.testDrive();
-        BuilderController builderController = new BuilderController();
-        builderController.createRequest();
+        //       BuilderController builderController = new BuilderController();
+        //      builderController.createRequest();
+        RunTraffic runTraffic = new RunTraffic();
+        runTraffic.trafficController();
     }
 }
