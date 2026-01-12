@@ -1,5 +1,6 @@
 
 import builderPattern.BuilderController;
+import chainOfResponsibilityPattern.LogHandler;
 import equalandHashcode.MoneyDriverController;
 import factoryPattern.CarFactoryController;
 import notification.EmailNotification;
@@ -16,26 +17,7 @@ import userRegistrationSystem.UserRegistrationController;
 
 public class Main {
     public static void main(String[] args) {
-//        PaymentManager paymentManager = new PaymentManager();
-//        PaymentStrategy paymentStrategy = paymentManager.choosePaymentMethod("cash");
-//        paymentStrategy.pay();
-//        Office office = new Office(new BasicPrinter());
-//        office.doWork();
-//        NotificationManager notificationManager = new NotificationManager(new SmsNotification());
-        //       notificationManager.tellSecret();
-//        UserCartController userCartController = new UserCartController();
-//        userCartController.createCartSystem();
-//        MoneyDriverController moneyDriverController = new MoneyDriverController();
-//        moneyDriverController.createImmutableClass();
-        //       UserRegistrationController userRegistrationController = new UserRegistrationController();
-        //       userRegistrationController.performOperations();
-        //      LoggerController loggerController = new LoggerController();
-        //      loggerController.checkInstances();
-//        CarFactoryController carFactoryController = new CarFactoryController();
-//        carFactoryController.testDrive();
-        //       BuilderController builderController = new BuilderController();
-        //      builderController.createRequest();
-        RunTraffic runTraffic = new RunTraffic();
-        runTraffic.trafficController();
+        LogHandler logHandler = new LogHandler();
+        logHandler.handleLog("tree");
     }
 }

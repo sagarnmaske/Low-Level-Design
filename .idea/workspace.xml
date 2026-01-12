@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="notification system">
-      <change afterPath="$PROJECT_DIR$/src/stateDesignPattern/GetCurState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stateDesignPattern/GreenLightState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stateDesignPattern/LightColors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stateDesignPattern/LightState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stateDesignPattern/RedLightState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stateDesignPattern/RunTraffic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stateDesignPattern/TrafficController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stateDesignPattern/YellowLightState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chainOfResponsibilityPattern/DebugLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chainOfResponsibilityPattern/ErrorLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chainOfResponsibilityPattern/InfoLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chainOfResponsibilityPattern/LogHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chainOfResponsibilityPattern/LogLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chainOfResponsibilityPattern/TraceLevel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -66,6 +63,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="shoppingcartSystem" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="chainOfResponsibilityPattern" />
     </key>
   </component>
   <component name="RunManager">
