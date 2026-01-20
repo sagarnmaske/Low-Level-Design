@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="notification system">
-      <change afterPath="$PROJECT_DIR$/src/chainOfResponsibilityPattern/DebugLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chainOfResponsibilityPattern/ErrorLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chainOfResponsibilityPattern/InfoLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chainOfResponsibilityPattern/LogHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chainOfResponsibilityPattern/LogLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chainOfResponsibilityPattern/TraceLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/decoratorDesignPattern/BasePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/decoratorDesignPattern/BasePizza1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/decoratorDesignPattern/BasePizza2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/decoratorDesignPattern/Cheez.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/decoratorDesignPattern/DecoratorPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/decoratorDesignPattern/PizzaCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/decoratorDesignPattern/Toppings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
