@@ -1,4 +1,6 @@
 package commandDesignPattern;
 
-public class Command {
+public interface Command {
+    void execute();
+    void undo();
 }
