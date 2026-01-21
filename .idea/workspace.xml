@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="decorator Design pattern">
-      <change afterPath="$PROJECT_DIR$/src/commandDesignPattern/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commandDesignPattern/TurnOffTvCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commandDesignPattern/TurnOnTvCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commandDesignPattern/Tv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commandDesignPattern/TvRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templateDesignPattern/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templateDesignPattern/PaymentInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templateDesignPattern/PaymentWithCreditCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templateDesignPattern/PaymentWithUPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>

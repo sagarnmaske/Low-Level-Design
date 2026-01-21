@@ -1,9 +1,10 @@
 
 import commandDesignPattern.TvRemote;
+import templateDesignPattern.PaymentInterface;
 
 public class Main {
     public static void main(String[] args) {
-        TvRemote tvRemote = new TvRemote();
-        tvRemote.controlTv();
+        PaymentInterface paymentInterface = new PaymentInterface();
+        paymentInterface.pay();
     }
 }
