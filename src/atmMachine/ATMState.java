@@ -2,12 +2,12 @@ package atmMachine;
 
 import javax.naming.OperationNotSupportedException;
 
-public interface ATM {
+public interface ATMState {
     default void greeting() throws OperationNotSupportedException {
         throw new OperationNotSupportedException();
     }
 
-    default ATM acceptCard(ATMCard card) throws Exception {
+    default void acceptCard(ATMCard atmCard,ATM atm) throws Exception {
         throw new OperationNotSupportedException();
     }
 
@@ -19,7 +19,7 @@ public interface ATM {
         throw new OperationNotSupportedException();
     }
 
-    default ATM withdrawCash() throws OperationNotSupportedException {
+    default void withdrawCash(ATM atm) throws OperationNotSupportedException {
         throw new OperationNotSupportedException();
     }
 
@@ -27,7 +27,7 @@ public interface ATM {
         throw new OperationNotSupportedException();
     }
 
-    default ATM collectCash() throws OperationNotSupportedException {
+    default void collectCash(ATM atm) throws OperationNotSupportedException {
         throw new OperationNotSupportedException();
     }
 }

@@ -1,4 +1,5 @@
 package atmMachine;
 
-public enum States {
+public enum ATMStates {
+    IDLE,HAS_CARD,MONEY_DESP
 }

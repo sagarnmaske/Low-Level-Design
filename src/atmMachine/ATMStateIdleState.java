@@ -2,7 +2,7 @@ package atmMachine;
 
 import javax.naming.OperationNotSupportedException;
 
-public class ATMIdleState implements ATM {
+public class ATMStateIdleState implements ATMState {
 
     @Override
     public void greeting() {
@@ -10,10 +10,10 @@ public class ATMIdleState implements ATM {
     }
 
     @Override
-    public ATM acceptCard(ATMCard atmCard) throws OperationNotSupportedException {
+    public void acceptCard(ATMCard atmCard, ATM atm) throws OperationNotSupportedException {
         System.out.println(atmCard);
         System.out.println("Accepted");
-        return ATMStatesFactory.getATMState(ATMStates.HAS_CARD);
+        atm.setCurState(ATMStatesFactory.getATMState(ATMStates.HAS_CARD));
     }
 
 }
