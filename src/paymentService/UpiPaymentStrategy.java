@@ -2,7 +2,7 @@ package paymentService;
 
 public class UpiPaymentStrategy implements PaymentStrategy {
     @Override
-    public void pay() {
-        System.out.println("paid via UPI");
+    public void pay(int amount) {
+        System.out.println(amount + " paid via UPI");
     }
 }

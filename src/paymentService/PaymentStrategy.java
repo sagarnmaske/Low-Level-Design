@@ -1,5 +1,5 @@
 package paymentService;
 
 public interface PaymentStrategy {
-    void pay();
+    void pay(int ammount);
 }

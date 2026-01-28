@@ -3,8 +3,8 @@ package paymentService;
 public class PaymentManager {
 
 
-    private PaymentStrategyFactory paymentStrategyFactory = new PaymentStrategyFactory();
     public PaymentStrategy choosePaymentMethod(String choice){
+        PaymentStrategyFactory paymentStrategyFactory = new PaymentStrategyFactory();
        return paymentStrategyFactory.getPaymentStrategy(choice);
     }
 }
