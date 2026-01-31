@@ -1,12 +1,9 @@
-import atmMachine.ATMController;
 
-import libraryManagamentSystem.LibraryManager;
-import parkingLot.ParkingLotManager;
-import templateDesignPattern.PaymentInterface;
+import ticTacToe.BoardManager;
 
 public class Main {
     public static void main(String[] args) {
-        LibraryManager libraryManager = new LibraryManager();
-        libraryManager.manageLibrary();
+        BoardManager boardManager = new BoardManager();
+        boardManager.playTicTacToe();
     }
 }
