@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="decorator Design pattern">
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/BoardManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/CheckWinner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/ColumnWiseWinner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/DefaultPieceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/DiagonalWiseWinner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/DrawChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/InitialiseBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/OPieceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/OperationsOnBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/PieceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/RowWiseWinner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/WinningStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ticTacToe/XPieceType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
