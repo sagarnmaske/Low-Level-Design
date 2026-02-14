@@ -22,8 +22,6 @@ public class Ticket {
                 "ticketId='" + ticketId + '\'' +
                 ", vehicle=" + vehicle +
                 ", time='" + time + '\'' +
-                ", parkingFloor=" + parkingFloor +
-                ", parkingSpot=" + parkingSpot +
                 '}';
     }
 }
