@@ -1,9 +1,10 @@
 
+import parkingLot.ParkingLotManager;
 import ticTacToe.BoardManager;
 
 public class Main {
     public static void main(String[] args) {
-        BoardManager boardManager = new BoardManager();
-        boardManager.playTicTacToe();
+        ParkingLotManager parkingLotManager = new ParkingLotManager();
+        parkingLotManager.manageParking();
     }
 }

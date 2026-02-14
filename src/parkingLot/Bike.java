@@ -1,9 +1,7 @@
 package parkingLot;
 
-public class Bike implements Vehicle {
-    String bikeNumber;
-
+public class Bike extends Vehicle {
     public Bike(String bikeNumber) {
-        this.bikeNumber = bikeNumber;
+        this.vehicleNumber = bikeNumber;
     }
 }

@@ -1,19 +1,26 @@
 package parkingLot;
 
 public class Bill {
-    int billId;
+    String billId;
     int amount;
     boolean isPaid;
 
-    Bill(int billId, Ticket ticket) {
-        this.billId = billId;
-        String startTime = ticket.time;
-        int sTime = Integer.parseInt(startTime);
-        this.amount = (100 - sTime) * 100;
+    Bill(Ticket ticket, int amount) {
+        this.billId = ticket.ticketId + amount + ticket.vehicle.vehicleNumber;
+        this.amount = amount;
         this.isPaid = false;
     }
 
     public int getAmount() {
         return this.amount;
+    }
+
+    @Override
+    public String toString() {
+        return "Bill{" +
+                "billId='" + billId + '\'' +
+                ", amount=" + amount +
+                ", isPaid=" + isPaid +
+                '}';
     }
 }

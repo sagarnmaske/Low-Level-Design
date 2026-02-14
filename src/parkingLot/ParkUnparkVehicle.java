@@ -9,7 +9,7 @@ public class ParkUnparkVehicle {
 
     public static Ticket parkVehicle(Vehicle vehicle, ParkingFloor parkingFloor, ParkingSpot spot) {
         System.out.println();
-        Ticket ticket = new Ticket(123, vehicle, "10", parkingFloor, spot);
+        Ticket ticket = new Ticket(vehicle, "10", parkingFloor, spot);
         for (ParkingSpot parkingSpot : parkingFloor.parkingSpots) {
             if (parkingSpot == spot) {
                 parkingSpot.isOccupied = true;
@@ -19,6 +19,8 @@ public class ParkUnparkVehicle {
     }
 
     public static Bill unParkVehicle(Ticket ticket) {
-        return new Bill(123, ticket);
+        PricingStrategy pricingStrategy = VehiclePricingStrategyFactory.getBikePricingStrategy(ticket.vehicle);
+        int price = pricingStrategy.getPrice();
+        return new Bill(ticket, price);
     }
 }

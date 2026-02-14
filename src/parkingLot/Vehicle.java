@@ -1,5 +1,12 @@
 package parkingLot;
 
-public interface Vehicle{
+public class Vehicle {
+    String vehicleNumber;
 
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "vehicleNumber='" + vehicleNumber + '\'' +
+                '}';
+    }
 }

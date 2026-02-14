@@ -1,18 +1,29 @@
 package parkingLot;
 
 public class Ticket {
-    int ticketId;
+    String ticketId;
     Vehicle vehicle;
     String time;
     ParkingFloor parkingFloor;
     ParkingSpot parkingSpot;
 
-    public Ticket(int ticketId, Vehicle vehicle, String time, ParkingFloor parkingFloor,
+    public Ticket(Vehicle vehicle, String time, ParkingFloor parkingFloor,
                   ParkingSpot parkingSpot) {
-        this.ticketId = ticketId;
+        this.ticketId = vehicle.vehicleNumber + time;
         this.vehicle = vehicle;
         this.time = time;
         this.parkingFloor = parkingFloor;
         this.parkingSpot = parkingSpot;
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "ticketId='" + ticketId + '\'' +
+                ", vehicle=" + vehicle +
+                ", time='" + time + '\'' +
+                ", parkingFloor=" + parkingFloor +
+                ", parkingSpot=" + parkingSpot +
+                '}';
     }
 }
