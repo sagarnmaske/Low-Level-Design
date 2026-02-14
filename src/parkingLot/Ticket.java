@@ -4,15 +4,15 @@ public class Ticket {
     String ticketId;
     Vehicle vehicle;
     String time;
-    ParkingFloor parkingFloor;
+    int parkingFloorId;
     ParkingSpot parkingSpot;
 
-    public Ticket(Vehicle vehicle, String time, ParkingFloor parkingFloor,
+    public Ticket(Vehicle vehicle, String time, int parkingFloorId,
                   ParkingSpot parkingSpot) {
         this.ticketId = vehicle.vehicleNumber + time;
         this.vehicle = vehicle;
         this.time = time;
-        this.parkingFloor = parkingFloor;
+        this.parkingFloorId = parkingFloorId;
         this.parkingSpot = parkingSpot;
     }
 

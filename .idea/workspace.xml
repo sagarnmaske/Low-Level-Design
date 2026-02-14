@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="decorator Design pattern">
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/READE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/BikeParkingSpot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/CarParkingSpot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/ParkingSpotType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/SearchBikeParkingSpot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/SearchCarParkingSpot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parkingLot/SearchParkingSpot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parkingLot/InitializeParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/InitializeParkingLot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parkingLot/ParkUnparkVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/ParkUnparkVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parkingLot/ParkingLotManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/ParkingLotManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parkingLot/ParkingSpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/ParkingSpot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parkingLot/READE.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parkingLot/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +82,7 @@
       <recent name="shoppingcartSystem" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="parkingLot" />
       <recent name="commandDesignPattern" />
       <recent name="chainOfResponsibilityPattern" />
     </key>

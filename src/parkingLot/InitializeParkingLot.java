@@ -5,16 +5,16 @@ import java.util.List;
 public class InitializeParkingLot {
 
     public static ParkingLot initializeParkingLot() {
-        ParkingSpot parkingSpot1 = new ParkingSpot(1);
-        ParkingSpot parkingSpot2 = new ParkingSpot(2);
-        ParkingSpot parkingSpot3 = new ParkingSpot(3);
-        ParkingSpot parkingSpot4 = new ParkingSpot(4);
-        ParkingSpot parkingSpot5 = new ParkingSpot(5);
+        ParkingSpot parkingSpot1 = new BikeParkingSpot(1, ParkingSpotType.BIKE);
+        ParkingSpot parkingSpot2 = new BikeParkingSpot(2, ParkingSpotType.BIKE);
+        ParkingSpot parkingSpot3 = new CarParkingSpot(3, ParkingSpotType.CAR);
+        ParkingSpot parkingSpot4 = new CarParkingSpot(4, ParkingSpotType.CAR);
+        ParkingSpot parkingSpot5 = new CarParkingSpot(5, ParkingSpotType.CAR);
         List<ParkingSpot> parkingSpots = List.of(parkingSpot1, parkingSpot2,
                 parkingSpot3, parkingSpot4, parkingSpot5);
-        ParkingFloor floor1 = new ParkingFloor(1, parkingSpots);
-        ParkingFloor floor2 = new ParkingFloor(2, parkingSpots);
-        ParkingFloor floor3 = new ParkingFloor(3, parkingSpots);
-        return new ParkingLot(List.of(floor1, floor2, floor3));
+        ParkingFloor floor0 = new ParkingFloor(1, parkingSpots);
+        ParkingFloor floor1 = new ParkingFloor(2, parkingSpots);
+        ParkingFloor floor2 = new ParkingFloor(3, parkingSpots);
+        return new ParkingLot(List.of(floor0, floor1, floor2));
     }
 }
