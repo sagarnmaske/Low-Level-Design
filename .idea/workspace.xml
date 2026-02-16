@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="decorator Design pattern">
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/BikeParkingSpot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/CarParkingSpot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/ParkingSpotType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/SearchBikeParkingSpot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/SearchCarParkingSpot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parkingLot/SearchParkingSpot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parkingLot/InitializeParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/InitializeParkingLot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parkingLot/ParkUnparkVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/ParkUnparkVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parkingLot/ParkingLotManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/ParkingLotManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parkingLot/ParkingSpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/ParkingSpot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parkingLot/READE.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parkingLot/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atmMachine/BankServerInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atmMachine/OperationNotAllowed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atmMachine/ValidatePin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atmMachine/ValidatePinImplementations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/ATM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/ATMController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/ATMController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/ATMInventry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/ATMState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/ATMState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/ATMStateIdleState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/ATMStateIdleState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/ATMStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/ATMStates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/ATMStatesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/ATMStatesFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/HasCardState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/HasCardState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/MoneyDespesing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/MoneyDespising.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parkingLot/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/parkingLot/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,7 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Exception" />
         <option value="Class" />
       </list>
     </option>
@@ -79,6 +83,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="atmMachine" />
       <recent name="shoppingcartSystem" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">

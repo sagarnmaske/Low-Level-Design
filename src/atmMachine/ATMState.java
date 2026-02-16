@@ -1,33 +1,31 @@
 package atmMachine;
 
-import javax.naming.OperationNotSupportedException;
-
 public interface ATMState {
-    default void greeting() throws OperationNotSupportedException {
-        throw new OperationNotSupportedException();
+    default void greeting() throws OperationNotAllowed {
+        throw new OperationNotAllowed();
     }
 
-    default void acceptCard(ATMCard atmCard,ATM atm) throws Exception {
-        throw new OperationNotSupportedException();
+    default void acceptCard(ATMCard atmCard, ATM atm) throws OperationNotAllowed {
+        throw new OperationNotAllowed();
     }
 
-    default boolean validDatePin(int pin) throws OperationNotSupportedException {
-        throw new OperationNotSupportedException();
+    default boolean validDatePin(ATMCard atmCard, int pin, BankServer bankServer) throws OperationNotAllowed {
+        throw new OperationNotAllowed();
     }
 
-    default void checkBalance() throws OperationNotSupportedException {
-        throw new OperationNotSupportedException();
+    default void checkBalance() throws OperationNotAllowed {
+        throw new OperationNotAllowed();
     }
 
-    default void withdrawCash(ATM atm) throws OperationNotSupportedException {
-        throw new OperationNotSupportedException();
+    default void withdrawCash(ATM atm) throws OperationNotAllowed {
+        throw new OperationNotAllowed();
     }
 
-    default void depositCash() throws OperationNotSupportedException {
-        throw new OperationNotSupportedException();
+    default void depositCash() throws OperationNotAllowed {
+        throw new OperationNotAllowed();
     }
 
-    default void collectCash(ATM atm) throws OperationNotSupportedException {
-        throw new OperationNotSupportedException();
+    default void collectCash(ATM atm) throws OperationNotAllowed {
+        throw new OperationNotAllowed();
     }
 }

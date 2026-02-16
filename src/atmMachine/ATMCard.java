@@ -16,6 +16,11 @@ public final class ATMCard {
 
     @Override
     public String toString() {
-        return "Card Number Is:"+ this.atmNumber;
+        return "ATMCard{" +
+                "atmNumber='" + atmNumber + '\'' +
+                ", cardHolderName='" + cardHolderName + '\'' +
+                ", expiryDate='" + expiryDate + '\'' +
+                ", cvv=" + cvv +
+                '}';
     }
 }

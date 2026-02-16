@@ -1,5 +1,5 @@
 package atmMachine;
 
 public enum ATMStates {
-    IDLE,HAS_CARD,MONEY_DESP
+    IDLE, HAS_CARD, MONEY_DESPISING
 }

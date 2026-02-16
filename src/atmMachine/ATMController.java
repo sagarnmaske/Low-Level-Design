@@ -3,10 +3,12 @@ package atmMachine;
 public class ATMController {
     public void controlAtm() {
         try {
-            ATM atm = new ATM(new ATMStateIdleState());
+            BankServer bankServer = BankServerInitializer.initializeServer();
+            ATM atm = new ATM(new ATMStateIdleState(), bankServer);
             atm.greeting();
-            atm.acceptCard(new ATMCard("123", "Sagar", "", 133));
-            atm.validatePin(124);
+            ATMCard atmCard = new ATMCard("125633", "Sagar", "12/26", 128);
+            atm.acceptCard(atmCard);
+            System.out.println(atm.validatePin(atmCard, 1234, bankServer));
             atm.checkBalance();
             atm.withdrawCash();
             atm.collectCash();

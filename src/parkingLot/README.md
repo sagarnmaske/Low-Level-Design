@@ -8,4 +8,4 @@
 
 ## Enhance The Existing Low Level Design 
     1.Add search parkingSpot based on parkingFloor and Vehicle Type
-    2.Also calculate parking amount in real time.
+    2.Also calculate parking amount in real time .

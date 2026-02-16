@@ -1,39 +1,39 @@
 package atmMachine;
 
-import javax.naming.OperationNotSupportedException;
-
 public class ATM {
     ATMState curState;
+    BankServer bankServer;
 
-    public ATM(ATMState atmState) {
+    public ATM(ATMState atmState, BankServer bankServer) {
         this.curState = atmState;
+        this.bankServer = bankServer;
     }
 
     public void setCurState(ATMState atmState) {
         this.curState = atmState;
     }
 
-    public void greeting() throws OperationNotSupportedException {
+    public void greeting() {
         this.curState.greeting();
     }
 
-    public void acceptCard(ATMCard atmCard) throws Exception {
-        this.curState.acceptCard(atmCard,this);
+    public void acceptCard(ATMCard atmCard) {
+        this.curState.acceptCard(atmCard, this);
     }
 
-    public void validatePin(int pin) throws OperationNotSupportedException {
-        this.curState.validDatePin(pin);
+    public boolean validatePin(ATMCard atmCard, int pin, BankServer bankServer) {
+        return this.curState.validDatePin(atmCard, pin, bankServer);
     }
 
-    public void checkBalance() throws OperationNotSupportedException {
+    public void checkBalance() {
         this.curState.checkBalance();
     }
 
-    public void withdrawCash() throws OperationNotSupportedException {
+    public void withdrawCash() {
         this.curState.withdrawCash(this);
     }
 
-    public void collectCash() throws OperationNotSupportedException {
+    public void collectCash() {
         this.curState.collectCash(this);
     }
 }
