@@ -9,19 +9,19 @@ public interface ATMState {
         throw new OperationNotAllowed();
     }
 
-    default boolean validDatePin(ATMCard atmCard, int pin, BankServer bankServer) throws OperationNotAllowed {
+    default boolean validDatePin(int pin, BankServer bankServer) throws OperationNotAllowed {
         throw new OperationNotAllowed();
     }
 
-    default void checkBalance() throws OperationNotAllowed {
+    default void checkBalance(BankServer bankServer) throws OperationNotAllowed {
         throw new OperationNotAllowed();
     }
 
-    default void withdrawCash(ATM atm) throws OperationNotAllowed {
+    default void withdrawCash(ATM atm, BankServer bankServer, Long amount) throws OperationNotAllowed {
         throw new OperationNotAllowed();
     }
 
-    default void depositCash() throws OperationNotAllowed {
+    default void depositCash(Long amount, BankServer bankServer) throws OperationNotAllowed {
         throw new OperationNotAllowed();
     }
 

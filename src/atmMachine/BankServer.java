@@ -10,7 +10,7 @@ public class BankServer {
         cardDetailsMap = new HashMap<>();
     }
 
-    public void addCard(ATMCard atmCard, Integer pin, Long accountBalance) {
+    public void addCard(ATMCard atmCard, int pin, Long accountBalance) {
         cardDetailsMap.put(atmCard, new ATMCardDetails(pin, accountBalance));
     }
 
@@ -18,7 +18,7 @@ public class BankServer {
         return cardDetailsMap.containsKey(card);
     }
 
-    public boolean validatePin(ATMCard card, Integer pin) {
+    public boolean validatePin(ATMCard card, int pin) {
         return cardDetailsMap.get(card).getPin().equals(pin);
     }
 

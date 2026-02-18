@@ -21,19 +21,23 @@ public class ATM {
         this.curState.acceptCard(atmCard, this);
     }
 
-    public boolean validatePin(ATMCard atmCard, int pin, BankServer bankServer) {
-        return this.curState.validDatePin(atmCard, pin, bankServer);
+    public boolean validatePin(int pin) {
+        return this.curState.validDatePin(pin, this.bankServer);
     }
 
     public void checkBalance() {
-        this.curState.checkBalance();
+        this.curState.checkBalance(this.bankServer);
     }
 
-    public void withdrawCash() {
-        this.curState.withdrawCash(this);
+    public void withdrawCash(Long amount) throws OperationNotAllowed {
+        this.curState.withdrawCash(this, bankServer, amount);
     }
 
     public void collectCash() {
         this.curState.collectCash(this);
+    }
+
+    public void depositCash(Long amount) {
+        this.curState.depositCash(amount, bankServer);
     }
 }

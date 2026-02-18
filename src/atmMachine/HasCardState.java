@@ -8,24 +8,31 @@ public class HasCardState implements ATMState {
     }
 
     @Override
-    public boolean validDatePin(ATMCard card, int pin, BankServer bankServer) {
+    public boolean validDatePin(int pin, BankServer bankServer) {
         ValidatePin validatePin = new ValidatePinImplementations(bankServer);
-        return validatePin.isValidPin(card, pin);
+        return validatePin.isValidPin(atmCard, pin);
     }
 
     @Override
-    public void checkBalance() {
-        System.out.println("Current Balance Is 10000");
+    public void checkBalance(BankServer bankServer) {
+        System.out.println("Checking balance");
+        System.out.println(bankServer.getBalance(this.atmCard));
     }
 
     @Override
-    public void withdrawCash(ATM atm) throws OperationNotAllowed {
-        System.out.println("Cash Withdrawing");
+    public void withdrawCash(ATM atm, BankServer bankServer, Long amount) throws OperationNotAllowed {
+        bankServer.withdrawBalance(this.atmCard, amount);
+        System.out.println("Money Withdrawn From Account");
+        System.out.println(bankServer.getBalance(this.atmCard));
+        System.out.println("Please collect cash");
         atm.setCurState(new MoneyDespising(atmCard));
     }
 
     @Override
-    public void depositCash() {
-        System.out.println("Service Not Available");
+    public void depositCash(Long amount, BankServer bankServer) {
+        System.out.println("Depositing Cash");
+        bankServer.addBalance(this.atmCard, amount);
+        System.out.println("Money Deposited in Account");
+        System.out.println(bankServer.getBalance(this.atmCard));
     }
 }
