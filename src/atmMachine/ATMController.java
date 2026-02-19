@@ -42,11 +42,11 @@ public class ATMController {
                     } else if (choice == 2) {
                         System.out.println("Enter Amount to Deposit");
                         int amount = input.nextInt();
-                        atm.depositCash((long) amount);
+                        atm.depositCash(amount);
                     } else {
                         System.out.println("Enter Amount to Withdraw");
                         int amount = input.nextInt();
-                        atm.withdrawCash((long) amount);
+                        atm.withdrawCash(amount);
                         atm.collectCash();
                     }
                 }
@@ -55,7 +55,7 @@ public class ATMController {
                 if (ch1 != 1) {
                     break;
                 }
-             //   atm = new ATM(new ATMStateIdleState(), bankServer);
+                //   atm = new ATM(new ATMStateIdleState(), bankServer);
 
             }
         } catch (Exception e) {

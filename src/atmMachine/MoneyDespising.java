@@ -11,5 +11,4 @@ public class MoneyDespising implements ATMState {
         System.out.println("Cash Collected");
         atm.setCurState(new ATMStateIdleState());
     }
-
 }

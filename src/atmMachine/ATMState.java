@@ -17,11 +17,11 @@ public interface ATMState {
         throw new OperationNotAllowed();
     }
 
-    default void withdrawCash(ATM atm, BankServer bankServer, Long amount) throws OperationNotAllowed {
+    default void withdrawCash(ATM atm, BankServer bankServer, int amount) throws OperationNotAllowed {
         throw new OperationNotAllowed();
     }
 
-    default void depositCash(Long amount, BankServer bankServer) throws OperationNotAllowed {
+    default void depositCash(int amount, BankServer bankServer) throws OperationNotAllowed {
         throw new OperationNotAllowed();
     }
 

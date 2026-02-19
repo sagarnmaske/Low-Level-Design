@@ -29,7 +29,7 @@ public class ATM {
         this.curState.checkBalance(this.bankServer);
     }
 
-    public void withdrawCash(Long amount) throws OperationNotAllowed {
+    public void withdrawCash(int amount) throws OperationNotAllowed {
         this.curState.withdrawCash(this, bankServer, amount);
     }
 
@@ -37,7 +37,7 @@ public class ATM {
         this.curState.collectCash(this);
     }
 
-    public void depositCash(Long amount) {
+    public void depositCash(int amount) {
         this.curState.depositCash(amount, bankServer);
     }
 }

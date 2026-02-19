@@ -20,7 +20,7 @@ public class HasCardState implements ATMState {
     }
 
     @Override
-    public void withdrawCash(ATM atm, BankServer bankServer, Long amount) throws OperationNotAllowed {
+    public void withdrawCash(ATM atm, BankServer bankServer, int amount) throws OperationNotAllowed {
         bankServer.withdrawBalance(this.atmCard, amount);
         System.out.println("Money Withdrawn From Account");
         System.out.println(bankServer.getBalance(this.atmCard));
@@ -29,7 +29,7 @@ public class HasCardState implements ATMState {
     }
 
     @Override
-    public void depositCash(Long amount, BankServer bankServer) {
+    public void depositCash(int amount, BankServer bankServer) {
         System.out.println("Depositing Cash");
         bankServer.addBalance(this.atmCard, amount);
         System.out.println("Money Deposited in Account");

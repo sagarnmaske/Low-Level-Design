@@ -10,7 +10,7 @@ public class BankServer {
         cardDetailsMap = new HashMap<>();
     }
 
-    public void addCard(ATMCard atmCard, int pin, Long accountBalance) {
+    public void addCard(ATMCard atmCard, int pin, int accountBalance) {
         cardDetailsMap.put(atmCard, new ATMCardDetails(pin, accountBalance));
     }
 
@@ -22,21 +22,21 @@ public class BankServer {
         return cardDetailsMap.get(card).getPin().equals(pin);
     }
 
-    public Long getBalance(ATMCard card) {
+    public int getBalance(ATMCard card) {
         return cardDetailsMap.get(card).getAccountBalance();
     }
 
-    public void addBalance(ATMCard card, Long balance) {
+    public void addBalance(ATMCard card, int balance) {
         ATMCardDetails currAtmCardDetails = cardDetailsMap.get(card);
         currAtmCardDetails.setAccountBalance(currAtmCardDetails.getAccountBalance() + balance);
         cardDetailsMap.put(card, currAtmCardDetails);
     }
 
-    public boolean hasSufficientBalance(ATMCard card, Long balance) {
+    public boolean hasSufficientBalance(ATMCard card, int balance) {
         return cardDetailsMap.get(card).getAccountBalance() >= balance;
     }
 
-    public void withdrawBalance(ATMCard card, Long balance) {
+    public void withdrawBalance(ATMCard card, int balance) {
         ATMCardDetails currAtmCardDetails = cardDetailsMap.get(card);
         currAtmCardDetails.setAccountBalance(currAtmCardDetails.getAccountBalance() - balance);
         cardDetailsMap.put(card, currAtmCardDetails);
