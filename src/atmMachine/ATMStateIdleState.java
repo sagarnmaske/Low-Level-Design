@@ -3,7 +3,8 @@ package atmMachine;
 public class ATMStateIdleState implements ATMState {
 
     @Override
-    public void greeting() {
+    public void greeting(ATM atm) {
+        System.out.println(atm);
         System.out.println("Greet The User, Hello There!!");
     }
 

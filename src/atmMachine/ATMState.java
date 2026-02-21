@@ -1,7 +1,7 @@
 package atmMachine;
 
 public interface ATMState {
-    default void greeting() throws OperationNotAllowed {
+    default void greeting(ATM atm) throws OperationNotAllowed {
         throw new OperationNotAllowed();
     }
 
@@ -9,19 +9,19 @@ public interface ATMState {
         throw new OperationNotAllowed();
     }
 
-    default boolean validDatePin(int pin, BankServer bankServer) throws OperationNotAllowed {
+    default boolean validDatePin(int pin, ATM atm) throws OperationNotAllowed {
         throw new OperationNotAllowed();
     }
 
-    default void checkBalance(BankServer bankServer) throws OperationNotAllowed {
+    default void checkBalance(ATM atm) throws OperationNotAllowed {
         throw new OperationNotAllowed();
     }
 
-    default void withdrawCash(ATM atm, BankServer bankServer, int amount) throws OperationNotAllowed {
+    default void withdrawCash(ATM atm, int amount) throws OperationNotAllowed {
         throw new OperationNotAllowed();
     }
 
-    default void depositCash(int amount, BankServer bankServer) throws OperationNotAllowed {
+    default void depositCash(int amount, ATM atm) throws OperationNotAllowed {
         throw new OperationNotAllowed();
     }
 

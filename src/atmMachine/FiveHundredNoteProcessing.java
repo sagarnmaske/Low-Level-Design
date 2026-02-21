@@ -1,10 +1,10 @@
 package atmMachine;
 
-public class FiveHundredNoteWithdrawal implements MoneyWithdrawalChain {
+public class FiveHundredNoteProcessing implements MoneyProcessingChain {
     InventoryManager inventoryManager;
-    MoneyWithdrawalChain nextInChain;
+    MoneyProcessingChain nextInChain;
 
-    public FiveHundredNoteWithdrawal(InventoryManager inventoryManager, MoneyWithdrawalChain nextInChain) {
+    public FiveHundredNoteProcessing(InventoryManager inventoryManager, MoneyProcessingChain nextInChain) {
         this.inventoryManager = inventoryManager;
         this.nextInChain = nextInChain;
     }

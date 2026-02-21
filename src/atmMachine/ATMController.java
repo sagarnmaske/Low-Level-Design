@@ -8,7 +8,8 @@ public class ATMController {
             ATMCard atmCard1 = new ATMCard("125633", "Sagar", "12/26", 128);
             ATMCard atmCard2 = new ATMCard("1354", "Arsu", "1/29", 129);
             BankServer bankServer = BankServerInitializer.initializeServer(atmCard1, atmCard2);
-            ATM atm = new ATM(new ATMStateIdleState(), bankServer);
+            InventoryManager inventoryManager = InventoryInitializer.initializeInventoryManager();
+            ATM atm = new ATM(new ATMStateIdleState(), bankServer, inventoryManager, 123, "Dhotri Tuljapur Dharashiv", "SNM Bank");
             atm.greeting();
             while (true) {
                 Scanner input = new Scanner(System.in);
