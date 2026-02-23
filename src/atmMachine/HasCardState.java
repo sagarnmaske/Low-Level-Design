@@ -20,9 +20,10 @@ public class HasCardState implements ATMState {
     }
 
     @Override
-    public void withdrawCash(ATM atm, int amount) throws OperationNotAllowed {
+    public void withdrawCash(ATM atm, int amount, Money money) throws OperationNotAllowed {
         atm.bankServer.withdrawBalance(this.atmCard, amount);
         System.out.println("Money Withdrawn From Account");
+        atm.moneyProcessingChain.withdrawMoney(money, amount);
         System.out.println(atm.bankServer.getBalance(this.atmCard));
         System.out.println("Please collect cash");
         atm.setCurState(new MoneyDespising(atmCard));

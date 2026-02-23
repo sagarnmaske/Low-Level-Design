@@ -4,18 +4,20 @@ public class ATM {
     ATMState curState;
     BankServer bankServer;
     InventoryManager inventoryManager;
+    MoneyProcessingChain moneyProcessingChain;
     int atmId;
     String address;
     String bankName;
 
     public ATM(ATMState atmState, BankServer bankServer, InventoryManager inventoryManager,
-               int atmId, String address, String bankName) {
+               int atmId, String address, String bankName, MoneyProcessingChain moneyProcessingChain) {
         this.curState = atmState;
         this.bankServer = bankServer;
         this.inventoryManager = inventoryManager;
         this.atmId = atmId;
         this.address = address;
         this.bankName = bankName;
+        this.moneyProcessingChain = moneyProcessingChain;
     }
 
     public void setCurState(ATMState atmState) {
@@ -38,8 +40,10 @@ public class ATM {
         this.curState.checkBalance(this);
     }
 
-    public void withdrawCash(int amount) throws OperationNotAllowed {
-        this.curState.withdrawCash(this, amount);
+    public Money withdrawCash(int amount) throws OperationNotAllowed {
+        Money money = new Money();
+        this.curState.withdrawCash(this, amount, money);
+        return money;
     }
 
     public void collectCash() {

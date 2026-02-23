@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="decorator Design pattern" />
+    <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="decorator Design pattern">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/ATM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/ATMController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/ATMController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/ATMState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/ATMState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/HasCardState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/HasCardState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/Money.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/MoneyProcessingChainInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/MoneyProcessingChainInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/OneHundredNoteProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/OneHundredNoteProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atmMachine/OperationNotAllowed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atmMachine/OperationNotAllowed.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

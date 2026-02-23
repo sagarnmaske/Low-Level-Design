@@ -9,7 +9,11 @@ public class ATMController {
             ATMCard atmCard2 = new ATMCard("1354", "Arsu", "1/29", 129);
             BankServer bankServer = BankServerInitializer.initializeServer(atmCard1, atmCard2);
             InventoryManager inventoryManager = InventoryInitializer.initializeInventoryManager();
-            ATM atm = new ATM(new ATMStateIdleState(), bankServer, inventoryManager, 123, "Dhotri Tuljapur Dharashiv", "SNM Bank");
+            MoneyProcessingChain moneyProcessingChain = MoneyProcessingChainInitializer.initialize(inventoryManager);
+            ATM atm = new ATM(new ATMStateIdleState(), bankServer, inventoryManager, 123,
+                    "Dhotri Tuljapur Dharashiv", "SNM Bank",
+                    moneyProcessingChain);
+            System.out.println(inventoryManager.totalAvailableNotes());
             atm.greeting();
             while (true) {
                 Scanner input = new Scanner(System.in);
@@ -47,7 +51,9 @@ public class ATMController {
                     } else {
                         System.out.println("Enter Amount to Withdraw");
                         int amount = input.nextInt();
-                        atm.withdrawCash(amount);
+                        Money money = atm.withdrawCash(amount);
+                        System.out.println(inventoryManager.totalAvailableNotes());
+                        System.out.println(money);
                         atm.collectCash();
                     }
                 }

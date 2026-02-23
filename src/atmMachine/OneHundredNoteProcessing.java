@@ -13,11 +13,10 @@ public class OneHundredNoteProcessing implements MoneyProcessingChain {
     @Override
     public boolean withdrawMoney(Money money, int amount) {
         int count = amount / 100;
-        if (count * 100 == amount) {
-            money.twoHundredNotes = inventoryManager.removeHundredNotes(count);
+        if (amount % 100 == 0) {
+            money.hundredNotes = inventoryManager.removeHundredNotes(count);
             return true;
         }
-
         return false;
     }
 
