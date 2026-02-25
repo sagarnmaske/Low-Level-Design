@@ -2,12 +2,14 @@ package factoryPattern;
 
 public class CarFactoryController {
     public void testDrive() {
-        CarFactory carFactory = new CarFactory();
-        Car car1 = carFactory.getCar(CarType.FAST);
+        CarFactory economyCarFactory = new EconomicalCarFactory();
+        Car car1 = economyCarFactory.createCar();
         car1.drivingExperience();
-        Car car2 = carFactory.getCar(CarType.COOL);
+        CarFactory luxuryCarFactory = new LuxuryCarFactory();
+        Car car2 = luxuryCarFactory.createCar();
         car2.drivingExperience();
-        Car car3 = carFactory.getCar(CarType.ECONOMICAL);
+        CarFactory sportsCarFactory = new SportsCarFactory();
+        Car car3 = sportsCarFactory.createCar();
         car3.drivingExperience();
     }
 }
