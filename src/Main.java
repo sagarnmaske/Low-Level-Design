@@ -1,13 +1,7 @@
-
-import atmMachine.ATMController;
-import factoryPattern.CarFactoryController;
-import parkingLot.ParkingLotManager;
+import abstractFactoryDesignPattern.AbstractFactoryManager;
 
 public class Main {
     public static void main(String[] args) {
-//        ATMController atmController = new ATMController();
-//        atmController.controlAtm();
-        CarFactoryController carFactoryController = new CarFactoryController();
-        carFactoryController.testDrive();
+        AbstractFactoryManager.manageFactory();
     }
 }
