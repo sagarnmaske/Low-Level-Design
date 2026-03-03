@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="decorator Design pattern">
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/AbstractFactoryManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/BankEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/BankEmployeeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/EmployeeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/ExperienceBankEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/ExperienceBankEmployeeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/ExperiencedITEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/ExperiencedITEmployeeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/ITEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/ITEmployeeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/TraineeBankEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/TraineeBankEmployeeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/TraineeITEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abstractFactoryDesignPattern/TraineeITEmployeeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategyDesignPattern/DiscountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategyDesignPattern/DiscountStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategyDesignPattern/Flat100OffOnOrdersAbove1000.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategyDesignPattern/Flat500OffOnOrdersAbove5000.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategyDesignPattern/Flat5PercetageDiscountStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>

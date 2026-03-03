@@ -1,7 +1,8 @@
-import abstractFactoryDesignPattern.AbstractFactoryManager;
+
+import strategyDesignPattern.DiscountController;
 
 public class Main {
     public static void main(String[] args) {
-        AbstractFactoryManager.manageFactory();
+        DiscountController.controlDiscounts();
     }
 }
