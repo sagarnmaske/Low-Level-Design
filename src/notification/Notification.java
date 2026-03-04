@@ -1,5 +1,5 @@
 package notification;
 
 public interface Notification {
-     void notifyUser();
+     void notifyUser(User user,String message);
 }

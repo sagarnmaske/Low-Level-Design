@@ -1,8 +1,8 @@
 package notification;
 
-public class EmailNotification implements Notification{
+public class EmailNotification implements Notification {
     @Override
-    public void notifyUser() {
-        System.out.println("You got secret notification via Email");
+    public void notifyUser(User user, String message) {
+        user.receiveNotification("Received Email notification:" + message);
     }
 }

@@ -1,8 +1,8 @@
 
-import strategyDesignPattern.DiscountController;
+import notification.NotificationController;
 
 public class Main {
     public static void main(String[] args) {
-        DiscountController.controlDiscounts();
+        NotificationController.controlNotification();
     }
 }
