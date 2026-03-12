@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="decorator Design pattern">
-      <change afterPath="$PROJECT_DIR$/src/notification/Creator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notification/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notification/EventConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notification/NotificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notification/NotificationSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notification/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rateLimiter/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rateLimiter/FixedWindowRateLimiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rateLimiter/FixedWindowRateLimiterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rateLimiter/RateLimiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rateLimiter/RateLimiterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rateLimiter/RateLimiterCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rateLimiter/RateLimiterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rateLimiter/SlidingWindowRateLimiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rateLimiter/SlidingWindowRateLimiterFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notification/EmailNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notification/EmailNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notification/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notification/NotificationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notification/NotificationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notification/SmsNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notification/SmsNotification.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +84,7 @@
       <recent name="shoppingcartSystem" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="rateLimiter" />
       <recent name="atmMachine" />
       <recent name="parkingLot" />
       <recent name="commandDesignPattern" />
