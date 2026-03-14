@@ -31,7 +31,7 @@ public class LibraryManager {
             int amount = borrowReturn.returnBook(reader);
             System.out.println("Amount To Pay Is:" + amount + " Rupees");
             PaymentManager paymentManager = new PaymentManager();
-            PaymentStrategy paymentStrategy = paymentManager.choosePaymentMethod("upi");
+            PaymentStrategy paymentStrategy = paymentManager.choosePaymentMethod();
             paymentStrategy.pay(amount);
         }
 

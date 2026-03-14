@@ -1,5 +1,5 @@
 package parkingLot;
 
 public interface PricingStrategy {
-    int getPrice();
+    long getPrice(long time);
 }

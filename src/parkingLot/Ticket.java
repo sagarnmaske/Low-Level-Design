@@ -3,11 +3,11 @@ package parkingLot;
 public class Ticket {
     String ticketId;
     Vehicle vehicle;
-    String time;
+    long time;
     int parkingFloorId;
     ParkingSpot parkingSpot;
 
-    public Ticket(Vehicle vehicle, String time, int parkingFloorId,
+    public Ticket(Vehicle vehicle, long time, int parkingFloorId,
                   ParkingSpot parkingSpot) {
         this.ticketId = vehicle.vehicleNumber + time;
         this.vehicle = vehicle;

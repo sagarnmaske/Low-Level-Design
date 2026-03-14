@@ -3,6 +3,8 @@ package parkingLot;
 import paymentService.PaymentManager;
 import paymentService.PaymentStrategy;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class ParkingLotManager {
@@ -10,6 +12,7 @@ public class ParkingLotManager {
         ParkingLot parkingLot = InitializeParkingLot.initializeParkingLot();
         SearchParkingSpot searchSpotForCar = new SearchCarParkingSpot(parkingLot);
         SearchParkingSpot searchParkingSpotForBike = new SearchBikeParkingSpot(parkingLot);
+        Map<Vehicle, Ticket> vehicleTicketMap = new HashMap<>();
         while (true) {
             System.out.println("Enter Your Vehicle Details");
             System.out.println("What is Your Vehicle Type 1:CAR,2:BIKE");
@@ -34,12 +37,14 @@ public class ParkingLotManager {
             Ticket ticket = ParkUnparkVehicle.parkVehicle(vehicle, floorId, parkingSpot);
             System.out.println("Ticket Generated Successfully");
             System.out.println(ticket);
+            vehicleTicketMap.put(vehicle, ticket);
+            System.out.println("Entry Added Successfully");
             System.out.println("Unpark your Vehicle");
-            Bill bill = ParkUnparkVehicle.unParkVehicle(ticket);
+            Bill bill = ParkUnparkVehicle.unParkVehicle(vehicleTicketMap.get(vehicle));
             System.out.println("Bill Generated Successfully");
             System.out.println(bill);
             PaymentManager paymentManager = new PaymentManager();
-            PaymentStrategy paymentStrategy = paymentManager.choosePaymentMethod("upi");
+            PaymentStrategy paymentStrategy = paymentManager.choosePaymentMethod();
             paymentStrategy.pay(bill.getAmount());
             bill.isPaid = true;
             System.out.println(bill);

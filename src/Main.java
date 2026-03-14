@@ -1,8 +1,9 @@
 
-import adapterDesignPattern.NumberSystemController;
+import parkingLot.ParkingLotManager;
 
 public class Main {
     public static void main(String[] args) {
-        NumberSystemController.control();
+        ParkingLotManager parkingLotManager = new ParkingLotManager();
+        parkingLotManager.manageParking();
     }
 }

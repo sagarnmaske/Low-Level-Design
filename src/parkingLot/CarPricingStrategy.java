@@ -2,7 +2,10 @@ package parkingLot;
 
 public class CarPricingStrategy implements PricingStrategy {
     @Override
-    public int getPrice() {
-        return 200;
+    public long getPrice(long time) {
+        long currentTime = System.currentTimeMillis();
+        System.out.println("Unparking Time:" + currentTime);
+        System.out.println("Parked Time:" + (currentTime - time));
+        return (currentTime - time) * 150;
     }
 }

@@ -1,7 +1,7 @@
 package bookmyshow;
 
+import paymentService.PaymentManager;
 import paymentService.PaymentStrategy;
-import paymentService.PaymentStrategyFactory;
 
 import java.util.List;
 
@@ -21,8 +21,8 @@ public class Show {
     }
 
     public Ticket bookSeat(Seat seat) {
-        PaymentStrategyFactory paymentStrategyFactory = new PaymentStrategyFactory();
-        PaymentStrategy paymentStrategy = paymentStrategyFactory.getPaymentStrategy("upi");
+        PaymentManager paymentManager = new PaymentManager();
+        PaymentStrategy paymentStrategy = paymentManager.choosePaymentMethod();
         Ticket ticket = seat.createTicket();
         System.out.println(ticket);
         System.out.println(ticket.price + ": Amount to be paid");

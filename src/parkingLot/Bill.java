@@ -2,16 +2,16 @@ package parkingLot;
 
 public class Bill {
     String billId;
-    int amount;
+    long amount;
     boolean isPaid;
 
-    Bill(Ticket ticket, int amount) {
+    Bill(Ticket ticket, long amount) {
         this.billId = ticket.ticketId + amount + ticket.vehicle.vehicleNumber;
         this.amount = amount;
         this.isPaid = false;
     }
 
-    public int getAmount() {
+    public long getAmount() {
         return this.amount;
     }
 
