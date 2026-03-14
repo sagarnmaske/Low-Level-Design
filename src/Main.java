@@ -1,9 +1,8 @@
 
-import rateLimiter.RateLimiterController;
+import adapterDesignPattern.NumberSystemController;
 
 public class Main {
     public static void main(String[] args) {
-        RateLimiterController rateLimiterController = new RateLimiterController();
-        rateLimiterController.controlRateLimiter();
+        NumberSystemController.control();
     }
 }
