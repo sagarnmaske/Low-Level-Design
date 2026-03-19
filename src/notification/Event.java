@@ -1,16 +1,25 @@
 package notification;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class Event {
-    Queue<String> queue;
+    int id;
+    String title;
+    String description;
+    long timestamp;
 
-    public Event() {
-        queue = new LinkedList<>();
+    public Event(int id, String title, String description, long timestamp) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.timestamp = timestamp;
     }
 
-    public void addEvent(String event) {
-        queue.add(event);
+    @Override
+    public String toString() {
+        return "Event{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", timestamp=" + timestamp +
+                '}';
     }
 }

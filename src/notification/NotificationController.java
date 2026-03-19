@@ -5,15 +5,16 @@ import java.util.List;
 public class NotificationController {
     public static void controlNotification() {
         NotificationManager notificationManager = new NotificationManager();
-        Event e = new Event();
-        Creator creator = new Creator(123, e);
+        EventsQueue e = new EventsQueue();
+        YTVideoCreator YTVideoCreator = new YTVideoCreator(123, e);
+        DiscountOfferPublisher discountOfferPublisher = new DiscountOfferPublisher(e);
         List<User> users = notificationManager.createUserList();
         NotificationSender notificationSender = notificationManager.createNotificationSender(users);
         EventConsumer eventConsumer = notificationManager.initializeEventConsumer(e, notificationSender);
         Thread videoCreatingThread = new Thread(() -> {
             try {
-                for (int i = 0; i < 10; i++) {
-                    creator.uploadVideo(i);
+                for (int i = 0; i < 5; i++) {
+                    YTVideoCreator.uploadVideo(i);
                     Thread.sleep(1000);
                 }
             } catch (Exception ex) {
@@ -21,22 +22,33 @@ public class NotificationController {
             }
         });
 
-        int count = 10;
-
-        Thread eventConsumerThread = new Thread(() -> {
+        Thread discountOfferThread = new Thread(() -> {
             try {
-                int c = 0;
-                while (c < count) {
-                    eventConsumer.consumeEvent();
-                    Thread.sleep(2000);
-                    c++;
+                for (int i = 0; i < 3; i++) {
+                    discountOfferPublisher.appyDiscountOffer(i);
+                    Thread.sleep(1000);
                 }
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
             }
         });
 
-        eventConsumerThread.start();
+        int count = 2;
+
+        Thread eventConsumerThread = new Thread(() -> {
+            try {
+                int c = 0;
+                while (c < count) {
+                    eventConsumer.consumeEvent();
+                    Thread.sleep(10000);
+                    c++;
+                }
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+            }
+        });
+        discountOfferThread.start();
         videoCreatingThread.start();
+        eventConsumerThread.start();
     }
 }

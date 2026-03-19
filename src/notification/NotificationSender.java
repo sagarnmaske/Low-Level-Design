@@ -15,7 +15,7 @@ public class NotificationSender {
         this.emailNotification = emailNotification;
     }
 
-    public void sendNotification(String notification) {
+    public void sendNotification(Event notification) {
         Thread smsThread = new Thread(() -> {
             for (User user : users) {
                 smsNotification.notifyUser(user, notification);

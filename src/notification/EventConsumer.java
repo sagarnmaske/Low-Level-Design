@@ -2,21 +2,21 @@ package notification;
 
 public class EventConsumer {
 
-    Event event;
+    EventsQueue eventsQueue;
     NotificationSender sender;
 
-    public EventConsumer(Event event, NotificationSender sender) {
-        this.event = event;
+    public EventConsumer(EventsQueue eventsQueue, NotificationSender sender) {
+        this.eventsQueue = eventsQueue;
         this.sender = sender;
     }
 
     public void consumeEvent() {
-        if (event.queue.isEmpty()) {
+        if (eventsQueue.queue.isEmpty()) {
             System.out.println("No events in queue");
             return;
         }
-        while (!event.queue.isEmpty()) {
-            String e = event.queue.poll();
+        while (!eventsQueue.queue.isEmpty()) {
+            Event e = eventsQueue.queue.poll();
             sender.sendNotification(e);
         }
     }
