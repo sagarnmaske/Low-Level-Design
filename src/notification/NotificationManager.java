@@ -8,12 +8,11 @@ public class NotificationManager {
     }
 
     public NotificationSender createNotificationSender(List<User> users) {
-        return new NotificationSender(users, new SmsNotification(), new EmailNotification());
+        return new NotificationSender(users, new SmsNotifier(), new EmailNotifier());
     }
 
     public List<User> createUserList() {
         User user1 = new User(1);
-        // User user2 = new User(2);
         return List.of(user1);
     }
 }

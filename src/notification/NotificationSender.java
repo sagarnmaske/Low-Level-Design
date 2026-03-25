@@ -4,32 +4,23 @@ import java.util.List;
 
 public class NotificationSender {
     List<User> users;
-    Notification smsNotification;
-    Notification emailNotification;
+    Notifier smsNotifier;
+    Notifier emailNotifier;
 
     public NotificationSender(List<User> users,
-                              SmsNotification smsNotification,
-                              EmailNotification emailNotification) {
+                              SmsNotifier smsNotification,
+                              EmailNotifier emailNotification) {
         this.users = users;
-        this.smsNotification = smsNotification;
-        this.emailNotification = emailNotification;
+        this.smsNotifier = smsNotification;
+        this.emailNotifier = emailNotification;
     }
 
-    public void sendNotification(Event notification) {
-        Thread smsThread = new Thread(() -> {
+    public void sendNotification(Event event) {
             for (User user : users) {
-                smsNotification.notifyUser(user, notification);
+                smsNotifier.notifyUser(user, new Notification(event,"SMS"));
             }
-        });
-
-        Thread emailThread = new Thread(() -> {
             for (User user : users) {
-                emailNotification.notifyUser(user, notification);
+                emailNotifier.notifyUser(user, new  Notification(event,"EMAIL"));
             }
-        });
-
-        smsThread.start();
-        emailThread.start();
-
     }
 }

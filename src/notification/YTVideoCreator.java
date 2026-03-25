@@ -9,6 +9,7 @@ public class YTVideoCreator extends Publisher {
     }
 
     public void uploadVideo(int eventId) {
+        System.out.println("Uploading video");
         publishEvent(new VideoUploadedEvent(eventId, creatorId + ":uploaded Video",
                 "Hey Guys your favourite creator uploaded new video",
                 System.currentTimeMillis()));

@@ -7,7 +7,7 @@ public class User {
         this.id = id;
     }
 
-    public void receiveNotification(Event message) {
+    public void receiveNotification(Notification message) {
         System.out.println("userId:" + id + " Received Event Notification");
         System.out.println(message);
     }

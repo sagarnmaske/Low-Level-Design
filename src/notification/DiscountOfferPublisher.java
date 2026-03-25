@@ -7,6 +7,7 @@ public class DiscountOfferPublisher extends Publisher {
     }
 
     public void appyDiscountOffer(int id) {
+        System.out.println("Appy discount offer ");
         publishEvent(new DiscountOfferEvent(id, "10% Discount",
                 "We are giving 10% discount on our premium subscription",
                 System.currentTimeMillis()));

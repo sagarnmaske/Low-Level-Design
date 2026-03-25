@@ -1,5 +1,6 @@
 package executorService;
 
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -8,7 +9,7 @@ public class ParallelTaskController {
     public void parallelTask() {
         ExecutorService executor = Executors.newFixedThreadPool(5);
 
-       Future<String> s1 = executor.submit(() -> {
+        CompletableFuture<String> s5 = CompletableFuture.supplyAsync(()->{
             StringBuilder sb = new StringBuilder();
             sb.append(Thread.currentThread().getName());
             for (int i = 0; i < 100; i++) {
@@ -22,6 +23,7 @@ public class ParallelTaskController {
             }
             return sb.toString();
         });
+
         Future<String> s2 = executor.submit(() -> {
             StringBuilder sb = new StringBuilder();
             sb.append(Thread.currentThread().getName());
@@ -66,10 +68,10 @@ public class ParallelTaskController {
         });
 
         try{
-            System.out.println(s1.get());
-            System.out.println(s2.get());
-            System.out.println(s3.get());
-            System.out.println(s4.get());
+//            System.out.println(s2.get());
+//            System.out.println(s3.get());
+//            System.out.println(s4.get());
+            System.out.println(s5.get());
         }catch (Exception e){
             System.out.println(e.getMessage());
         }

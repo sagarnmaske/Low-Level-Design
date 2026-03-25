@@ -1,5 +1,8 @@
 package notification;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class EventConsumer {
 
     EventsQueue eventsQueue;
@@ -11,13 +14,14 @@ public class EventConsumer {
     }
 
     public void consumeEvent() {
-        if (eventsQueue.queue.isEmpty()) {
+        List<Event> events = eventsQueue.takeEvent();
+        if (events.isEmpty()) {
             System.out.println("No events in queue");
             return;
         }
-        while (!eventsQueue.queue.isEmpty()) {
-            Event e = eventsQueue.queue.poll();
-            sender.sendNotification(e);
+        for (Event event : events) {
+            sender.sendNotification(event);
         }
+
     }
 }

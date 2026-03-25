@@ -1,54 +1,50 @@
 package notification;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 public class NotificationController {
     public static void controlNotification() {
         NotificationManager notificationManager = new NotificationManager();
         EventsQueue e = new EventsQueue();
-        YTVideoCreator YTVideoCreator = new YTVideoCreator(123, e);
+        YTVideoCreator ytVideoCreator = new YTVideoCreator(123, e);
         DiscountOfferPublisher discountOfferPublisher = new DiscountOfferPublisher(e);
         List<User> users = notificationManager.createUserList();
         NotificationSender notificationSender = notificationManager.createNotificationSender(users);
         EventConsumer eventConsumer = notificationManager.initializeEventConsumer(e, notificationSender);
-        Thread videoCreatingThread = new Thread(() -> {
+        CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(() -> {
             try {
-                for (int i = 0; i < 5; i++) {
-                    YTVideoCreator.uploadVideo(i);
-                    Thread.sleep(1000);
+                for (int i = 0; i < 2; i++) {
+                    ytVideoCreator.uploadVideo(i);
                 }
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
             }
-        });
-
-        Thread discountOfferThread = new Thread(() -> {
+        }).thenRunAsync(() -> {
             try {
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < 2; i++) {
                     discountOfferPublisher.appyDiscountOffer(i);
-                    Thread.sleep(1000);
                 }
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
             }
-        });
-
-        int count = 2;
-
-        Thread eventConsumerThread = new Thread(() -> {
+        }).thenRunAsync(() -> {
             try {
                 int c = 0;
-                while (c < count) {
+                while (c < 2) {
+                    Thread.sleep(5000);
                     eventConsumer.consumeEvent();
-                    Thread.sleep(10000);
                     c++;
                 }
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
             }
         });
-        discountOfferThread.start();
-        videoCreatingThread.start();
-        eventConsumerThread.start();
+        try {
+            completableFuture.get();
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
     }
 }
