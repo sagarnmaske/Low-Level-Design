@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="executive service with callable future">
-      <change afterPath="$PROJECT_DIR$/src/singletonPattern/ErrorLogProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singletonPattern/InfoLogProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singletonPattern/LogProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singletonPattern/LogsAccumulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singletonPattern/WarnLogProducer.java" afterDir="false" />
+    <list default="true" id="a87f5be8-285a-4a49-9d51-7227fa3535be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/threadSafeCaching/CacheController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/threadSafeCaching/ThreadSafeCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/singletonPattern/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singletonPattern/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/singletonPattern/LoggerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singletonPattern/LoggerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

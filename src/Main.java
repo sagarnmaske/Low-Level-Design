@@ -1,12 +1,10 @@
 
-import executorService.ParallelTaskController;
-import notification.NotificationController;
-import parkingLot.ParkingLot;
 import singletonPattern.LoggerController;
+import threadSafeCaching.CacheController;
 
 public class Main {
     public static void main(String[] args) {
-        LoggerController loggerController = new LoggerController();
-        loggerController.checkInstances();
+        CacheController cacheController = new CacheController();
+        cacheController.controlCaching();
     }
 }
