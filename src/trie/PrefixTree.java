@@ -5,14 +5,14 @@ public class PrefixTree {
     Node root;
 
     public PrefixTree() {
-        root = new  Node();
+        root = new Node();
     }
 
     public void addWord(String word) {
         Node current = root;
-        for(char ch: word.toCharArray()) {
-            int idx =  ch - 'a';
-            if(current.children[idx] == null) {
+        for (char ch : word.toCharArray()) {
+            int idx = ch - 'a';
+            if (current.children[idx] == null) {
                 current.children[idx] = new Node();
             }
             current = current.children[idx];
@@ -21,10 +21,10 @@ public class PrefixTree {
     }
 
     public boolean searchWord(String word) {
-        Node  current = root;
-        for(char ch: word.toCharArray()) {
-            int idx =  ch - 'a';
-            if(current.children[idx] == null) {
+        Node current = root;
+        for (char ch : word.toCharArray()) {
+            int idx = ch - 'a';
+            if (current.children[idx] == null) {
                 return false;
             }
             current = current.children[idx];
@@ -33,10 +33,24 @@ public class PrefixTree {
         return current.eow;
     }
 
-    public class Node{
+    public boolean isPrefix(String prefix) {
+        Node current = root;
+        for (char ch : prefix.toCharArray()) {
+            int idx = ch - 'a';
+            if (current.children[idx] == null) {
+                return false;
+            }
+            current = current.children[idx];
+        }
+
+        return true;
+    }
+
+    public class Node {
         Node[] children;
         boolean eow;
-        public Node(){
+
+        public Node() {
             children = new Node[26];
             eow = false;
         }

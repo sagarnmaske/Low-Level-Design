@@ -8,5 +8,7 @@ public class PrefixTreeController {
         System.out.println(prefixTree.searchWord("sagar"));
         prefixTree.addWord("maske");
         System.out.println(prefixTree.searchWord("mask"));
+        System.out.println(prefixTree.isPrefix("mask"));
+        System.out.println(prefixTree.isPrefix("mad"));
     }
 }
